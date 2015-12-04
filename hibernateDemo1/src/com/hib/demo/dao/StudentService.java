@@ -1,6 +1,4 @@
-package hibDemo1.dao;
-
-import hibDemo1.entity.Student;
+package com.hib.demo.dao;
 
 import java.util.List;
 
@@ -10,6 +8,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+
+import com.hib.demo.entity.Student;
 
 public class StudentService {
 	private static Configuration conf;

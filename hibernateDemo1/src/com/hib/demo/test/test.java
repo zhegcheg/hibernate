@@ -1,10 +1,10 @@
-package hibDemo1.test;
-
-import hibDemo1.dao.StudentService;
-import hibDemo1.entity.Student;
+package com.hib.demo.test;
 
 import java.util.List;
 import java.util.Scanner;
+
+import com.hib.demo.dao.StudentService;
+import com.hib.demo.entity.Student;
 
 public class test {
 

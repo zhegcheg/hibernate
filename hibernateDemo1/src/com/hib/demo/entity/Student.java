@@ -1,4 +1,4 @@
-package hibDemo1.entity;
+package com.hib.demo.entity;
 
 import java.io.Serializable;
 
