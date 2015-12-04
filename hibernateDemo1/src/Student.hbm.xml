@@ -3,7 +3,7 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="hibDemo1.entity.Student" table="STUDENT">
+	<class name="com.hib.demo.entity.Student" table="STUDENT">
 		<id name="stuNo" type="java.lang.String" column="STUNO">
 			<!--generator的class类型
 				assigned:主键的状态 assigned表示程序生成
