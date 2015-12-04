@@ -1,4 +1,4 @@
-package hibDemo.test;
+package hibDemo1.test;
 
 import hibDemo1.dao.StudentService;
 import hibDemo1.entity.Student;

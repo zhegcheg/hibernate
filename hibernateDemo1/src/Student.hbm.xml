@@ -16,12 +16,8 @@
 			<generator class="assigned" />
 		</id>
 		<!-- 直接使用property属性设置 -->
-		<property name="stuName" type="java.lang.String" column="STUNAME" length="50" not-null="true" />
-		
-		<!-- 使用column设置 -->
-		<property name="stuPass" type="java.lang.String" column="STUPASS">
-			<column name="STUPASS" length="50" not-null="true"></column>
-		</property>
+		<property name="stuName" type="java.lang.String" column="STUNAME" />
+		<property name="stuPass" type="java.lang.String" column="STUPASS" />
 		<property name="stuSex" type="java.lang.String" column="STUSEX" />
 		<property name="stuAge" type="java.lang.Integer" column="STUAGE" />
 		<property name="Mobile" type="java.lang.String" column="MOBILE" />
