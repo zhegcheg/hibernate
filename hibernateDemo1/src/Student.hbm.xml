@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="hibDemo1.entity.Student" table="STUDENT">
+		<id name="stuNo" type="java.lang.String" column="STUNO">
+			<!--generator的class类型
+				assigned:主键的状态 assigned表示程序生成
+				sequence：Oracle中的序列
+				identity：Sql中的自动编号
+				increment：先查询最大的编号再增1
+				uuid：生成32位长的字符串
+				native：根据数据库自动生成
+			 -->
+			<generator class="assigned" />
+		</id>
+		<!-- 直接使用property属性设置 -->
+		<property name="stuName" type="java.lang.String" column="STUNAME" length="50" not-null="true" />
+		
+		<!-- 使用column设置 -->
+		<property name="stuPass" type="java.lang.String" column="STUPASS">
+			<column name="STUPASS" length="50" not-null="true"></column>
+		</property>
+		<property name="stuSex" type="java.lang.String" column="STUSEX" />
+		<property name="stuAge" type="java.lang.Integer" column="STUAGE" />
+		<property name="Mobile" type="java.lang.String" column="MOBILE" />
+		<property name="Email" type="java.lang.String" column="EMAIL" />
+		<property name="Address" type="java.lang.String" column="ADDRESS" />
+	</class>
+</hibernate-mapping>
