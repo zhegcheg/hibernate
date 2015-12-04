@@ -66,10 +66,10 @@ public class StudentService {
 		if (session != null) {
 			try {
 				// get如果没有查询到数据，则返回null
-				// stu = (Student) session.get(Student.class, stuNo);
+				stu = (Student) session.get(Student.class, stuNo);
 
 				// load如果没有查询到数据，则抛出异常
-				stu = (Student) session.load(Student.class, stuNo);
+				//stu = (Student) session.load(Student.class, stuNo);
 			} catch (HibernateException e) {
 				e.printStackTrace();
 			} finally {

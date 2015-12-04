@@ -13,7 +13,7 @@ public class Student implements Serializable {
 	private int stuAge;
 	private String Mobile;
 	private String Email;
-	private String Address;
+	private String Address; 
 	
 	public String getStuNo() {
 		return stuNo;

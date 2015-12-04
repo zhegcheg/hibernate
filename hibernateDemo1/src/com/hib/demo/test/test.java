@@ -14,10 +14,10 @@ public class test {
 		// AddStudent();
 
 		// 显示所有学生信息
-		ShowAll();
+		//ShowAll();
 
 		// 显示单个学生信息
-		// ShowOne();
+		ShowOne();
 
 		//更新学生信息
 		//Update();
@@ -37,7 +37,7 @@ public class test {
 	}
 
 	public static void ShowOne() {
-		String no = "A004";
+		String no = "A0003";
 		StudentService service = new StudentService();
 		Student student = service.GetStudentBystuNo(no);
 		if (student != null) {
